@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arquitecto de Soluciones | Pedro A. Alemán</title>
+
+  <!-- Seguridad CSP -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self';
+                 style-src 'self' https://cdn.jsdelivr.net;
+                 script-src 'self' https://cdn.jsdelivr.net https://cdn.emailjs.com;
+                 img-src 'self' data:;
+                 font-src 'self' https://cdn.jsdelivr.net;
+                 connect-src https://api.emailjs.com;
+                 form-action https://api.emailjs.com;
+                 base-uri 'self';
+                 frame-ancestors 'none';">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="#inicio">Arquitecto de Soluciones</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNav" class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li class="nav-item"><a href="#experiencia" class="nav-link">Experiencia</a></li>
+          <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero d-flex align-items-center text-center text-lg-start">
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1 class="fw-bold display-5 mb-3 text-primary">Transformo ideas en soluciones inteligentes</h1>
+          <p class="lead mb-4">
+            Soy un arquitecto de soluciones especializado en desarrollo web, automatización empresarial e inteligencia artificial. Ayudo a empresas y pequeños negocios a modernizar sus procesos con tecnología.
+          </p>
+          <a href="#contacto" class="btn btn-primary btn-lg">Agenda una consulta</a>
+        </div>
+        <div class="col-lg-5 text-center mt-4 mt-lg-0">
+          <img src="images/arquitectura.png" alt="Arquitectura tecnológica" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-5">Servicios</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="p-4 bg-white shadow-sm rounded h-100">
+            <i class="bi bi-cpu service-icon"></i>
+            <h5 class="fw-bold mt-3">Desarrollo a Medida</h5>
+            <p>Diseño y desarrollo de aplicaciones web, APIs y dashboards adaptados a las necesidades de tu negocio.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 bg-white shadow-sm rounded h-100">
+            <i class="bi bi-robot service-icon"></i>
+            <h5 class="fw-bold mt-3">Automatización Inteligente</h5>
+            <p>Implemento flujos automatizados con n8n, IA y servicios en la nube para ahorrar tiempo y reducir errores.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 bg-white shadow-sm rounded h-100">
+            <i class="bi bi-bar-chart-line service-icon"></i>
+            <h5 class="fw-bold mt-3">Consultoría Tecnológica</h5>
+            <p>Te ayudo a diseñar arquitecturas escalables, seguras y eficientes basadas en .NET, SQL Server y microservicios.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA -->
+  <section id="experiencia" class="py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">Experiencia y Especialización</h2>
+      <p class="mb-5">Más de 20 años desarrollando e implementando soluciones tecnológicas en sectores educativos, gubernamentales y empresariales.</p>
+
+      <div class="row g-4">
+        <div class="col-md-3"><div class="exp-card"><i class="bi bi-microsoft"></i><h6>.NET & C#</h6></div></div>
+        <div class="col-md-3"><div class="exp-card"><i class="bi bi-database"></i><h6>SQL Server & MongoDB</h6></div></div>
+        <div class="col-md-3"><div class="exp-card"><i class="bi bi-cloud"></i><h6>Azure & Cloud</h6></div></div>
+        <div class="col-md-3"><div class="exp-card"><i class="bi bi-diagram-3"></i><h6>Arquitectura y Microservicios</h6></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">Contáctame</h2>
+      <p class="mb-4">Cuéntame sobre tu empresa o proyecto y exploremos cómo la tecnología puede impulsarlo.</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form id="contact-form" class="text-start">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre</label>
+              <input type="text" id="name" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" id="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea id="message" class="form-control" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
+            <div id="form-alert" class="mt-3"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 bg-white border-top">
+    <div class="container text-center">
+      <p>© <span id="year"></span> Pedro A. Alemán · Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

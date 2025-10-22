@@ -1,0 +1,35 @@
+body {
+  font-family: 'Inter', sans-serif;
+  color: #212529;
+  background-color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+.hero {
+  background: linear-gradient(135deg, #f8f9fa, #ffffff);
+  min-height: 90vh;
+}
+
+.service-icon {
+  font-size: 2rem;
+  color: #0d6efd;
+}
+
+.exp-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  transition: all 0.2s ease;
+}
+.exp-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+.exp-card i {
+  font-size: 2rem;
+  color: #0d6efd;
+}
+footer {
+  font-size: 0.9rem;
+}
