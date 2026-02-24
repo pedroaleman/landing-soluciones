@@ -30,52 +30,69 @@
   </header>
 
   <!-- HERO -->
-  <section id="inicio" class="hero d-flex align-items-center text-center text-lg-start">
-    <div class="container py-5">
+<section id="inicio" class="hero d-flex align-items-center text-center text-lg-start position-relative overflow-hidden">
+    <div class="container py-5 position-relative z-index-1">
       <div class="row align-items-center">
-        <div class="col-lg-7">
-          <h1 class="fw-bold display-5 mb-3 text-primary">Transformo ideas en soluciones inteligentes</h1>
-          <p class="lead mb-4">
-            Soy un arquitecto de soluciones especializado en desarrollo web, automatización empresarial e inteligencia artificial. Ayudo a empresas y pequeños negocios a modernizar sus procesos con tecnología.
+        <div class="col-lg-6">
+          <span class="badge bg-primary-subtle text-primary mb-3 px-3 py-2 rounded-pill fw-bold">Consultoría y Desarrollo Tecnológico</span>
+          <h1 class="fw-bold display-4 mb-3 text-dark">
+            Automatiza tus procesos y <span class="text-primary">escala tu negocio</span>
+          </h1>
+          <p class="lead mb-4 text-secondary">
+            Deja de perder tiempo en tareas manuales. Diseñamos plataformas a medida e implementamos inteligencia artificial para que tu empresa opere de manera más rápida, segura y rentable.
           </p>
-          <a href="#contacto" class="btn btn-primary btn-lg">Agenda una consulta</a>
+          <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+            <a href="#contacto" class="btn btn-primary btn-lg shadow-sm">Solicita una Auditoría Gratuita</a>
+            <a href="#experiencia" class="btn btn-outline-secondary btn-lg">Ver casos de éxito</a>
+          </div>
         </div>
-        <div class="col-lg-5 text-center mt-4 mt-lg-0">
-          <img src="images/arquitectura.png" alt="Arquitectura tecnológica" class="img-fluid rounded">
+        <div class="col-lg-6 text-center mt-5 mt-lg-0">
+          <div class="hero-image-wrapper shadow-lg rounded-4 p-2 bg-white">
+            <img src="images/arquitectura.png" alt="Arquitectura tecnológica" class="img-fluid rounded-3">
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICIOS -->
   <section id="servicios" class="py-5 bg-light">
     <div class="container text-center">
-      <h2 class="fw-bold mb-5">Servicios</h2>
+      <h2 class="fw-bold mb-2">Soluciones que generan resultados</h2>
+      <p class="text-muted mb-5">Tecnología robusta traducida en crecimiento para tu empresa.</p>
+      
       <div class="row g-4">
         <div class="col-md-4">
-          <div class="p-4 bg-white shadow-sm rounded h-100">
-            <i class="bi bi-cpu service-icon"></i>
-            <h5 class="fw-bold mt-3">Desarrollo a Medida</h5>
-            <p>Diseño y desarrollo de aplicaciones web, APIs y dashboards adaptados a las necesidades de tu negocio.</p>
+          <div class="p-4 bg-white shadow-sm rounded-4 h-100 service-card">
+            <div class="icon-box bg-primary-subtle text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+              <i class="bi bi-cpu fs-3"></i>
+            </div>
+            <h5 class="fw-bold">Software a la Medida</h5>
+            <p class="text-secondary">Desarrollamos el motor digital de tu empresa. Desde plataformas internas hasta productos SaaS completos, listos para salir al mercado sin limitaciones técnicas.</p>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="p-4 bg-white shadow-sm rounded h-100">
-            <i class="bi bi-robot service-icon"></i>
-            <h5 class="fw-bold mt-3">Automatización Inteligente</h5>
-            <p>Implemento flujos automatizados con n8n, IA y servicios en la nube para ahorrar tiempo y reducir errores.</p>
+          <div class="p-4 bg-white shadow-sm rounded-4 h-100 service-card">
+            <div class="icon-box bg-primary-subtle text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+              <i class="bi bi-robot fs-3"></i>
+            </div>
+            <h5 class="fw-bold">Automatización e IA</h5>
+            <p class="text-secondary">Ahorra cientos de horas al mes. Conectamos tus herramientas actuales mediante n8n e integramos Inteligencia Artificial para eliminar el trabajo repetitivo.</p>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="p-4 bg-white shadow-sm rounded h-100">
-            <i class="bi bi-bar-chart-line service-icon"></i>
-            <h5 class="fw-bold mt-3">Consultoría Tecnológica</h5>
-            <p>Te ayudo a diseñar arquitecturas escalables, seguras y eficientes basadas en .NET, SQL Server y microservicios.</p>
+          <div class="p-4 bg-white shadow-sm rounded-4 h-100 service-card">
+            <div class="icon-box bg-primary-subtle text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+              <i class="bi bi-diagram-3 fs-3"></i>
+            </div>
+            <h5 class="fw-bold">Arquitectura y Rescate</h5>
+            <p class="text-secondary">¿Tu sistema actual es lento o falla? Auditamos y rediseñamos arquitecturas en .NET y SQL Server para garantizar seguridad, velocidad y escalabilidad total.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+ 
 
   <!-- EXPERIENCIA -->
   <section id="experiencia" class="py-5">
@@ -140,3 +157,4 @@
   <script src="js/main.js"></script>
 </body>
 </html>
+
