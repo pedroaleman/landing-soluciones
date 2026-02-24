@@ -115,3 +115,8 @@ body {
   color: #fff !important;
   transition: color 0.2s;
 }
+/* BORRAR DESPUÉS: Forzar visibilidad si falla el JS de AOS */
+[data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
+}
